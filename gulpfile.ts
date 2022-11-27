@@ -12,11 +12,9 @@ const paths = {
 /**
  * Transpiles Typescript files to build directory.
  */
-function transpile() {
+export default function transpile() {
   return gulp
     .src(['src/**/*.ts', '!src/**/*.test.ts'])
     .pipe(project())
     .js.pipe(gulp.dest(paths.build));
 }
-
-export default transpile;
