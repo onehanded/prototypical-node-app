@@ -1,8 +1,13 @@
 /*
  * Copyright (c) 2023 One Handed Ventures, LLC
  */
-function app() {
-  console.log('Hello World');
+
+/**
+ * @file app.ts
+ * @description The main entry point for the application.
+ */
+export default function app() {
+  console.log('Hello, world!');
 }
 
 app();
